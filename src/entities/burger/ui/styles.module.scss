@@ -1,0 +1,40 @@
+.button {
+  cursor: pointer;
+  position: relative;
+  width: 24px;
+  height: 18px;
+
+  &.opened > .line {
+    background: #fff;
+    &.first {
+      transform: rotate(45deg) translate(0);
+    }
+    &.second {
+      transform: rotate(-45deg) translate(0);
+    }
+    &.third {
+      transform: rotate(45deg) translate(0);
+      width: 100%;
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #7460ff;
+  border-radius: 100px;
+  top: calc(50% - 1px);
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out, background 0.3s ease-in-out;
+
+  &.first {
+    transform: translateY(-8px);
+  }
+
+  &.third {
+    transform: translateY(8px);
+    width: 58%;
+  }
+}

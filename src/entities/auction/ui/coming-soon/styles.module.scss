@@ -1,0 +1,144 @@
+.container {
+  --scroll-animation-duration: 100000ms;
+
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(400px + 1rem);
+  margin-top: 1.75rem;
+  margin-bottom: 2.5rem;
+
+  @media (min-width: 768px) {
+    margin-top: 2.75rem;
+  }
+  @media (min-width: 1024px) {
+    height: calc(400px + 2.5rem);
+    margin-bottom: 6.75rem;
+  }
+  @media (min-width: 1920px) {
+    margin-top: 2.75rem;
+    margin-bottom: 8.25rem;
+  }
+}
+
+.image {
+  border-radius: 1rem;
+  overflow: hidden;
+  min-width: 200px;
+  height: 200px;
+
+  & img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+.row {
+  position: absolute;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+
+.firstRow {
+  top: 0;
+  left: 0;
+  transform: translateX(calc(var(--component-width) / 2 - 100px));
+}
+
+.animationFirstRow {
+  animation: scrollToLeftStart var(--scroll-animation-duration) linear forwards,
+    scrollToLeft var(--scroll-animation-duration)
+      var(--scroll-animation-duration) linear infinite;
+}
+
+.secondRow {
+  bottom: 0;
+  right: 0;
+  transform: translateX(calc(var(--component-width) / -2 + 100px));
+  // right: calc(50% - 100px);
+  margin-top: 1.5rem;
+  flex-flow: row-reverse nowrap;
+}
+
+.animationSecondRow {
+  animation: scrollToRightStart var(--scroll-animation-duration) linear forwards,
+    scrollToRight var(--scroll-animation-duration)
+      var(--scroll-animation-duration) linear infinite;
+}
+
+.modal {
+  z-index: 0;
+  text-align: center;
+  background: #f6f6f7;
+  border-radius: 1rem;
+  padding: 2.75rem 2rem;
+  width: 315px;
+
+  @media (min-width: 768px) {
+    padding: 3.5rem 2.75rem;
+    width: 548px;
+  }
+  @media (min-width: 1024px) {
+    width: 788px;
+  }
+
+  & button {
+    margin-inline: auto;
+  }
+}
+
+.header {
+  margin-bottom: 0.5rem;
+  line-height: 130%;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0.5rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 2.25rem;
+  }
+}
+
+.description {
+  line-height: 130%;
+  margin-bottom: 1.75rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 2.75rem;
+  }
+  @media (min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+}
+
+@keyframes scrollToRightStart {
+  to {
+    transform: translateX(calc(100% / 3));
+  }
+}
+@keyframes scrollToRight {
+  from {
+    transform: translateX(calc(100% / 3));
+  }
+  to {
+    transform: translateX(calc(100% / 3 * 2));
+  }
+}
+
+@keyframes scrollToLeftStart {
+  to {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+@keyframes scrollToLeft {
+  from {
+    transform: translateX(calc(-100% / 3));
+  }
+  to {
+    transform: translateX(calc(-100% / 3 * 2));
+  }
+}

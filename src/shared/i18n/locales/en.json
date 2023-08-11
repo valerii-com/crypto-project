@@ -1,0 +1,216 @@
+{
+  "translation": {
+    "branding": "Dapp auction",
+    "connectwallet": {
+      "title": "Connect wallet",
+      "sectionTitle": "Current auction",
+      "goToAuction": "Go to auction",
+      "connect": "Connect",
+      "wallets": "Unified protocol for connecting wallets such as Trust Wallet, Coinomi, Argent and ",
+      "wallets_link": "many others",
+      "btn": "Connect",
+      "welcomeTitle": "All-Pay blockchain auction. The winner takes the NFT and up to 50% of all stakes",
+      "welcomeDescription": "Auction participants return 10% of their bids in GREEDY tokens, which always increase in price",
+      "welcomeButton": "View the auction",
+      "copied": "Wallet address copied"
+    },
+    "preview": {
+      "author": "Author",
+      "readmore": "Read more"
+    },
+    "exception": {
+      "cancelled_title": "Transaction signature was denied",
+      "cancelled_msg": "We were unable to successfully complete the transaction, please try again later!",
+      "general_title": "'Ooops, something went wrong.",
+      "general_msg": "We were unable to successfully complete the transaction, please try again later!"
+    },
+    "welcome": {
+      "title": "All-Pay blockchain auction. The winner takes the NFT and up to 50% of all stakes",
+      "subtitle": "Auction participants return 10% of their bids in GREEDY tokens, which always increase in price",
+      "description": "GreedyArt is a decentralized allpay auction where anyone can sell their work or earn money by purchasing it.",
+      "unauth": "To create an auction, please connect your wallet."
+    },
+    "works": {
+      "title": "How it works?",
+      "item_1": "Place a bet in BNB. All bets placed by participants are non-refundable",
+      "item_2": "Wait for the time allotted for the participation of the bet",
+      "item_3": "If the bet is not outbid by other participants, you will win the auction",
+      "item_4": "After the end of the auction, you can get GREEDY tokens for the bids made"
+    },
+    "token": {
+      "title": "Greedy token"
+    },
+    "help": {
+      "title": "Help"
+    },
+    "creating": {
+      "title": "Create auction",
+      "placeholder": "Preview",
+      "step": "Step",
+      "select": "Select your NFT",
+      "address": "NFT contract address",
+      "id": "NFT token ID",
+      "readmore": "Read more about how to find NFT contract address and NFT token ID ",
+      "readmore_link": "link here",
+      "nextstep": "Next",
+      "previousstep": "Back",
+      "notfound": "Your NFT was not found",
+      "notfound_msg": "Your NFT was not found, please try again",
+      "settings": "Auction settings",
+      "reward": "Initial reward",
+      "rules": "By clicking “Create Auction” button you agree to our ",
+      "rules_link": "Rules of Participation",
+      "approve": "Approve",
+      "approved": "Approved",
+      "success": "Success",
+      "success_msg": "Your auction has been successfully created and added to the list for publication.",
+      "label1155": "Number of copies NFT"
+    },
+    "myauctions": {
+      "title": "My auctions",
+      "none": "You have not created any auctions yet.",
+      "title_participated": "Take part auctions",
+      "none_participated": "You have not participated in any auction yet.",
+      "logout": "Logout",
+      "created": "Created by me",
+      "participated": "Take part",
+      "cancelled": "Deleted",
+      "closed": "Completed",
+      "waiting": "Waiting",
+      "active": "In progress",
+      "view": "View",
+      "update-meta": "Update meta",
+      "claim": "Claim a reward",
+      "claim_msg": "After deleting the auction, NFT and 90% of the deposited initial reward amount will be returned to your wallet.",
+      "remove": "Remove auction",
+      "remove_msg": "After deleting the auction, NFT and 90% of the deposited initial reward amount will be returned to your wallet.",
+      "current_auction": "Current auction",
+      "meta_updated": "Metadata updated",
+      "meta_updated_text": "We have successfully updated metadata for your auction",
+      "meta_error": "Metadata update error",
+      "meta_error_text": "Error occurred white updating metadata. Please try again later"
+    },
+    "completed": {
+      "title": "Completed auctions",
+      "title-one": "Completed auction",
+      "back-one": "Back to completed auctions",
+      "back": "Back to home",
+      "none": "We have not completed any auction",
+      "winningbet": "Winning bet",
+      "bidderreward": "Winner's reward",
+      "bidderwallet": "Winner's wallet",
+      "winner": "Congratulations! You have won the auction!",
+      "winner_msg": "Click the \"Claim\" button to claim your winnings and NFT token.",
+      "claim": "Claim your NFT and reward",
+      "bidder": "To receive NFT and a reward of {{amount}} BNB, click Claim.",
+      "seller": "To receive a {{amount}} BNB reward for selling NFTs, click Claim.",
+      "you_winner": "You winner"
+    },
+    "auctions": {
+      "load_more": "Load more",
+      "hide": "Hide",
+      "media": "Media",
+      "name": "Nft name",
+      "initialreward": "Initial reward",
+      "poolamount": "Pool Amount",
+      "bidderaward": "Winner's award",
+      "bidder": "Bidder",
+      "you": "you",
+      "bets": "Bets",
+      "no_bets": "No bets yet",
+      "view_history": "View history",
+      "bets_history": "Bets history",
+      "bet": "Bet",
+      "bet_day": "Date",
+      "bet_wallet": "Wallet",
+      "status": "Status",
+      "winneraward": "Winner's award",
+      "completion": "Time to completion",
+      "notstarted": "AUCTION HAS NOT STARTED YET",
+      "newbid": "NEW BET",
+      "awaiting": "AWAIT",
+      "currentbid": "Final bet",
+      "finalbid": "Current bet",
+      "completed": "Auction is completed",
+      "nextauction": "Next auction",
+      "gonextauction": "Go to current auction",
+      "close": "Claim",
+      "cancel": "Remove",
+      "closed": "Transaction was completed",
+      "closed_msg": "Tokens have been sent to your wallet.",
+      "cancelled": "Auction was canceled",
+      "cancelled_msg": "Your tokens and NFT have been sent to the wallet."
+    },
+    "bidding": {
+      "bet": "Bet",
+      "bet_time": "Betting time",
+      "highest": "Your bet is the highest now",
+      "waiting": "Waiting for the first bet",
+      "place": "Place a bet",
+      "accepted": "Your bet is {{amount}} accepted!",
+      "newbet": "New bet is {{amount}} accepted!",
+      "outbid": "Your bet is no longer current",
+      "bsc": "View on BscScan",
+      "placing": "Place a bet",
+      "min": "min",
+      "claim_msg": "To receive a {{amount}} BNB reward for selling NFTs, click Claim."
+    },
+    "attention": {
+      "title": "Attention",
+      "description": "All bidders bets are non-refundable. Once you place a bet, the invested funds will be transferred to the auction fund, and cannot be refunded.",
+      "agree": "Ok I agree",
+      "reject": "Cancel"
+    },
+    "howitworks": {
+      "title": "How it works",
+      "li1": "Connect your wallet and place a bet in BNB;",
+      "li2": "Wait for the time allotted to participate in the bet;",
+      "li3": "If the bet is not outbid by other participants, you will win NFT and receive 50% of the pool amount.",
+      "li4": "All bets are non-refundable.",
+      "moreinfo": "More info"
+    },
+    "upcomings": {
+      "title": "Next auctions",
+      "laodmore": "Load more",
+      "title-one": "Future auctions",
+      "back-one": "Back to home"
+    },
+    "comingsoon": {
+      "title": "New auction is coming soon",
+      "description": "Stay tuned or add your NFT for sale"
+    },
+
+    "disclaimer": {
+      "title": "Disclaimer",
+      "p1": "Risk Warning: participation in auctions, owning digital assets, NFT tokens, cryptocurrencies carries high risk and can lead to the total loss of the invested capital.",
+      "p2": "We strongly recommend not to invest more than you can afford to completely lose.",
+      "p3": "Before you start participating in auctions make sure that you fully understand the risks involved.",
+      "p4": "Before placing a bet you should to contact an independent competent person or organization.",
+      "p5": "Any personal successful investments in auctions in the past are in no case indicators of your success in the future.",
+      "p6": "NFT tokens which you can get on greedyart.io are not suitable for all investors, check your local legal assets and exchanges."
+    },
+    "footer": {
+      "copyright": "© Copyright 2022 GreedyArt. All rights reserved.",
+      "disclaimer": "Disclaimer"
+    },
+    "errors": {
+      "title": "Ooops, something went wrong.",
+      "account_not_found": "Please log in with your wallet",
+      "description": "GreedyArt's services are not available now, please try later.",
+      "notfound": "The requested URL was not found on this server. That’s all we know.",
+      "failed": "We were unable to successfully complete the transaction, please try again later!",
+      "denied": "Transaction signature was denied",
+      "denied_msg": "We were unable to successfully complete the transaction, please try again later!"
+    },
+    "pagination": {
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "network": {
+      "wrong": "Wrong Network",
+      "wrong_msg": "Please connect to the appropriate Binance Smart Chain network.",
+      "singout": "Sign out",
+      "change": "Change network"
+    }
+  }
+}

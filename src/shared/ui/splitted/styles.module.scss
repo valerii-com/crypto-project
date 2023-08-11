@@ -1,0 +1,16 @@
+.root {
+  word-break: break-all;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  @media (max-width: 1380px) {
+    gap: 30px;
+  }
+  @media (max-width: 1023px) {
+    grid-template-columns: 1fr;
+  }
+
+  & > * {
+    min-width: 0;
+  }
+}

@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+yarn --silent tsc
+echo "typescript ok"
+
+yarn lint-staged

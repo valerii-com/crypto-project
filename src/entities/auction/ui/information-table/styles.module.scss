@@ -1,0 +1,215 @@
+.root {
+  margin-top: 15px;
+  text-transform: uppercase;
+  & > div:last-child b {
+    text-transform: none;
+  }
+  @media (max-width: 1023px) {
+    margin: 0;
+  }
+}
+.item {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(206, 203, 222, 0.6);
+  div {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  span {
+    opacity: 0.6;
+  }
+  b {
+    text-align: right;
+  }
+  span,
+  b {
+    word-break: initial;
+  }
+}
+
+.list {
+  // overflow-y: auto;
+
+  &.normal {
+    & .wrapper {
+      font-weight: 400;
+    }
+  }
+  &.bold {
+    & .wrapper {
+      font-weight: 700;
+    }
+  }
+
+  .tr-header b {
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.6;
+    font-size: 16px;
+  }
+  li {
+    &:first-child {
+      text-transform: uppercase;
+      color: rgba(69, 66, 87, 0.6);
+      @media (max-width: 1023px) {
+        font-size: 14px;
+      }
+      & > .wrapper {
+        font-weight: 700;
+      }
+    }
+    &:not(:first-child) {
+      border-bottom: 1px solid rgba(206, 203, 222, 0.4);
+      @media (max-width: 767px) {
+        padding-bottom: 16px;
+      }
+    }
+    @media (max-width: 767px) {
+      &:first-child {
+        display: none;
+      }
+      // & > span:first-child {
+      // max-width: min-content;
+      // }
+    }
+  }
+  &::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background-color: #ebeaf2;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #cecbde;
+    outline-offset: 2px;
+  }
+}
+.wrapper {
+  padding: 20px 0;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr auto;
+
+  & > span {
+    font-size: 16px;
+    min-width: 125px;
+    word-break: keep-all;
+
+    &:first-child {
+      min-width: max-content;
+    }
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0;
+  }
+}
+.amount {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
+
+  label {
+    font-size: 12px;
+    color: rgba(69, 66, 87, 0.6);
+  }
+  a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    text-transform: lowercase;
+    color: #7460ff;
+    transition: 0.3s ease all;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  @media (max-width: 767px) {
+    text-align: right;
+    a {
+      justify-content: end;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  align-self: flex-end;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 130%;
+  color: #fff;
+  background: #454257;
+  padding: 0.25rem 0.5rem 0.125rem;
+}
+
+.bid-amount {
+  display: flex;
+  gap: 0.625rem;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-flow: row-reverse;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 0.5rem;
+  }
+}
+
+.betAmount {
+  @media (min-width: 1024px) {
+    margin-left: 0.5rem;
+  }
+}
+
+.bidsList {
+  margin-top: 40px;
+  // max-height: 500px;
+  padding-right: 1rem;
+
+  @media (min-width: 1024px) {
+    // max-height: 650px;
+  }
+}
+
+.bidsHistoryButton {
+  color: #7460ff;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.noBets {
+  text-align: center;
+  font-weight: 400;
+  color: rgba(69, 66, 87, 0.6);
+  margin: 1rem 0;
+}
+
+.modal {
+  @media (min-width: 768px) {
+    width: 636px;
+  }
+  @media (min-width: 1024px) {
+    width: 860px;
+  }
+}

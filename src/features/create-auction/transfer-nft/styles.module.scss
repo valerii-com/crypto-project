@@ -1,0 +1,15 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: center;
+  img {
+    height: 60px;
+    margin-bottom: 30px;
+  }
+  p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 24px;
+  }
+}

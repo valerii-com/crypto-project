@@ -1,0 +1,15 @@
+.root {
+  z-index: 999;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 767px) {
+    padding: 0 16px;
+    top: 10px;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

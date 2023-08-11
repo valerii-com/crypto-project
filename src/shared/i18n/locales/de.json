@@ -1,0 +1,15 @@
+{
+  "translation": {
+    "branding": "Dapp auktion"
+  },
+  "welcome": {
+    "title": "All-Pay blockchain auction. The winner takes the NFT and up to 50% of all stakes",
+    "subtitle": "Auction participants return 10% of their bids in GREEDY tokens, which always increase in price",
+    "description": "GreedyArt is a decentralized allpay auction where anyone can sell their work or earn money by purchasing it.",
+    "unauth": "To create an auction, please connect your wallet."
+  },
+  "completed": {
+    "title": "Voltooide veilingen",
+    "back": "Terug naar huis"
+  }
+}

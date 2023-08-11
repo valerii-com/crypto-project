@@ -1,0 +1,43 @@
+stages:
+  - stage
+  - deploy
+
+deploy_to_stage:
+    stage: stage
+    only:
+        - stage
+    environment:
+        name: stage
+    variables:
+        ROOT: "/website/frontend/"
+        RELEASE: ${ROOT}${CI_COMMIT_SHORT_SHA}-release
+        CURRENT: "/var/www/stage/frontend"
+    before_script:
+        - mkdir -p $RELEASE
+    script:
+        - cp -Rf . $RELEASE
+        - touch $RELEASE/.env
+        - cat $ENV_FILE_DEV > $RELEASE/.env
+        - cd $RELEASE
+        - yarn --no-progress
+        - yarn build --mode staging
+        - sudo ln -nsf $RELEASE $CURRENT
+    after_script:
+        - cd $ROOT
+        - ls -t | grep "\-release" | awk 'NR > 5 {print $0}' | xargs -t -I "{}" rm -rf "{}"
+    tags: 
+        - dev-shell
+
+#deploy_to_production:
+#    stage: deploy
+#    rules:
+#        - if: $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "main"
+#    environment:
+#        name: prod
+#    script:
+#        - yarn --no-progress --verbose
+#        - yarn build --mode prod
+#        - rm -rf /var/www/frontend/*
+#        - cp -R * /var/www/frontend
+#    tags: 
+#        - dev-shell

@@ -1,0 +1,138 @@
+@import './normalize';
+@import './reset';
+@import './fonts';
+
+*::selection {
+  background: #7460ff;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #454257;
+  overflow-x: hidden;
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+.container {
+  width: 1340px;
+  margin: 0 auto;
+  @media (max-width: 1380px) {
+    width: 940px;
+  }
+  @media (max-width: 1023px) {
+    width: 100%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+  @media (max-width: 767px) {
+    padding: 0 16px;
+  }
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 130%;
+  letter-spacing: -1px;
+  @media (max-width: 1380px) {
+    font-size: 32px;
+  }
+}
+h2 {
+  font-size: 36px;
+  @media (max-width: 1380px) {
+    font-size: 32px;
+  }
+}
+h3 {
+  font-size: 28px;
+  @media (max-width: 1023px) {
+    font-size: 24px;
+  }
+}
+p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  letter-spacing: -0.4px;
+  letter-spacing: -0.4px;
+  color: rgba(69, 66, 87, 0.8);
+  @media (max-width: 1380px) {
+    font-size: 16px;
+  }
+}
+label {
+  font-weight: 700;
+  font-size: 14px;
+  color: rgba(69, 66, 87, 0.6);
+  letter-spacing: -0.024em;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 20px;
+  color: #454257;
+  border: 1px solid #cecbde;
+  border-radius: 8px;
+  outline: none;
+  &::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: #cecbde;
+    letter-spacing: -0.024em;
+  }
+}
+.link {
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: #7460ff;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  &:hover {
+    color: rgba(116, 96, 255, 0.8);
+  }
+  &.disabled {
+    color: #cecbde;
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    @media (max-width: 1023px) {
+      color: #fff;
+      background: #ceccde;
+    }
+  }
+}
+
+.page-title {
+  margin: 20px 0 30px 0;
+  @media (max-width: 767px) {
+    margin: 24px 0 14px 0;
+  }
+}
+button {
+  overflow: hidden;
+}
+.image-placeholder {
+  object-fit: contain;
+}
+.hide-highlight {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

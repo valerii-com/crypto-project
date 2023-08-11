@@ -1,0 +1,46 @@
+.container {
+  position: relative;
+  width: max-content;
+}
+.tabs {
+  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(var(--item-count), 1fr);
+  padding: 0.25rem;
+  text-transform: uppercase;
+  flex-flow: row nowrap;
+  gap: 0.25rem;
+
+  border: 1px solid #7460ff;
+  border-radius: 12px;
+  font-size: 0.625rem;
+
+  @media (min-width: 1024px) {
+    font-size: 0.75rem;
+  }
+}
+
+.tabItem {
+  pointer-events: all;
+  color: #7460ff;
+  cursor: pointer;
+  padding: 12px 20px;
+  text-align: center;
+  transition: color 200ms ease-in-out;
+  &.active {
+    color: #fff;
+  }
+}
+
+.activeTabBackground {
+  z-index: -1;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  height: calc(100% - 0.5rem);
+  transform: translateY(-50%);
+  transition: left 200ms ease-in-out;
+  left: calc(0.25rem + (var(--active-index) - 1) * 100% / var(--item-count));
+  background-color: #7460ff;
+  width: calc(100% / var(--item-count) - 0.5rem);
+}

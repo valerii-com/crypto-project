@@ -1,0 +1,26 @@
+{
+  "translation": {
+    "branding": "Децентрализованый аукцион",
+    "connectwallet": {
+      "title": "Подключить кошелек",
+      "connect": "Подключить",
+      "wallets": "Единый протокол для подключения кошельков Trust Wallet, Coinomi, Argent ",
+      "wallets_link": "и многих других",
+      "btn": "Подключить"
+    },
+    "welcome": {
+      "title": "All-Pay блокчейн-аукцион. Победитель забирает NFT и до 50% всех ставок",
+      "subtitle": "Участники аукциона возвращают 10% своих ставок в GREEDY токенах, которые постоянно растут в цене",
+      "description": "GreedyArt — это децентрализованный allpay аукцион, где каждый может продать свою работу или заработать деньги, купив NFT",
+      "unauth": "To create an auction, please connect your wallet."
+    },
+    "footer": {
+      "copyright": "© Copyright 2022 GreedyArt. Все права защищены.",
+      "disclaimer": "Отказ от ответственности"
+    },
+    "completed": {
+      "title": "Завершенные аукционы",
+      "back": "Вернуться домой"
+    }
+  }
+}

@@ -1,0 +1,118 @@
+.heading {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 20px;
+}
+.inner {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px;
+  border-radius: 24px;
+  background: rgba(69, 66, 87, 0.05);
+  h2 {
+    margin-bottom: 40px;
+  }
+  button {
+    width: 100%;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  & > span {
+    line-height: 160%;
+    word-break: break-word;
+    display: block;
+    margin: 25px 0 50px 0;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: -0.4px;
+    color: rgba(69, 66, 87, 0.8);
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      text-decoration-line: underline;
+      color: #454257;
+    }
+  }
+  & > a {
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+  }
+  @media (max-width: 1380px) {
+    padding: 40px 24px;
+    h2 {
+      font-size: 28px;
+    }
+    & > span {
+      margin: 25px 0 25px 0;
+    }
+    .buttons button {
+      font-size: 12px;
+    }
+    a {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 1023px) {
+    border-radius: 0;
+    h2 {
+      font-size: 36px;
+    }
+  }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    button {
+      height: 50px;
+    }
+  }
+}
+.wrapper {
+  @media (max-width: 1023px) {
+    padding: 0;
+    .placeholder {
+      margin: 0 30px;
+    }
+  }
+  @media (max-width: 767px) {
+    .placeholder {
+      margin: 0 16px;
+    }
+  }
+}
+.input1155 {
+  margin-bottom: 24px;
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+.mobileContainer {
+  margin: 0 1.5rem;
+
+  @media (min-width: 1024px) {
+    margin: 0;
+  }
+}

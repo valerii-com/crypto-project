@@ -1,0 +1,25 @@
+.root {
+  width: 30%;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+  user-select: none;
+  text-align: center;
+  h1 {
+    margin-bottom: 15px;
+  }
+  img {
+    height: 300px;
+    margin-bottom: 40px;
+    @media (max-width: 767px) {
+      height: 200px;
+    }
+  }
+  @media (max-width: 767px) {
+    width: 90%;
+  }
+}

@@ -1,0 +1,25 @@
+.root {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  button {
+    width: 100%;
+  }
+
+  @media (max-width: 1023px) {
+    & > div {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  }
+}
+
+.alert {
+  width: 100%;
+}
+
+.claimButton {
+  margin-top: 30px;
+  height: 52px;
+}

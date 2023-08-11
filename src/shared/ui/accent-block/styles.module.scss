@@ -1,0 +1,76 @@
+.root {
+  padding: 24px;
+  box-shadow: 0px 4px 24px rgba(187, 133, 255, 0.6);
+  border-radius: 16px;
+  background: #bb85ff;
+  color: #fff;
+  transition: 1.5s ease all;
+  div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    .subvalue {
+      opacity: 0.6;
+    }
+    @media (max-width: 1023px) {
+      align-items: flex-end;
+      .subvalue {
+        margin-left: 5px;
+        line-height: 1;
+      }
+    }
+    @media (max-width: 767px) {
+      font-size: 12px;
+      line-height: 15px;
+      .subvalue {
+        margin-bottom: 2px;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+  }
+  b {
+    display: block;
+    margin-top: 25px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1;
+    @media (max-width: 1380px) {
+      font-size: 26px;
+    }
+    @media (max-width: 1023px) {
+      margin: 0;
+      font-size: 20px;
+    }
+    @media (max-width: 767px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+  @media (max-width: 1380px) {
+    padding: 16px;
+  }
+  @media (max-width: 1023px) {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  @media (max-width: 767px) {
+    gap: 2px;
+    background: transparent;
+    box-shadow: none;
+  }
+  @media (min-width: 768px) {
+    &.revert {
+      background: #fff;
+      color: #bb85ff;
+      box-shadow: none;
+      border-radius: 6px;
+    }
+  }
+}
